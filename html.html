@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient-Caretaker Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <div>
+        <li>
+          <img class="logo" src="heath_logo.jpg" alt="logo">
+        </li>
+      </div>
+      <div class="middle">
+        <li><b>Health Care Portal</b></li>
+      </div>
+      <div class="right">
+        <li>home</li>
+        <li>login</li>
+        <li>about</li>
+      </div>
+    </ul>
+    
+  </nav>
+
+  <main>
+    <section id="registration">
+        <img class="image1" src="logo.png.png" alt="images">
+        <img class="image2" src="image2.png" alt="image2">
+      <h2>Patient/Caretaker Registration</h2>
+      <button  onclick="window.location.href='register.html'" id="patientButton">Register as Patient</button>
+      <button id="caretakerButton">Register as Caretaker</button>
+    </section>
+    <section id="matches">
+      <h2>Your Matches</h2>
+      <ul id="matchesList"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+<script src="http://localhost:3000/script.js"></script>
+
+</body>
+</html>
