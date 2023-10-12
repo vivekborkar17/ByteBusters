@@ -1,8 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: black;
-    margin: 0;
-    padding: 0;
 }
 .container {
     max-width: 400px;
@@ -13,9 +11,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    text-align: center;
-}
+
 form {
     text-align: left;
 }
@@ -51,7 +47,7 @@ input[type="text"] {
     background-color: aliceblue;
     margin: 0%;
     padding: 0%;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 ul{
     display: flex;
@@ -66,14 +62,13 @@ nav{
     transform: translateZ(25px);
     transform-style: preserve-3d;
     transition: transform 0.5s;
-  
   }
   li{
     margin-right:15px ;
   }
   .middle{
     margin-left: 0;
-    margin-right: 230px;
+    margin-right: 200px;
     padding-left: 10px 10px;
     padding-right: 10px 10px;
     font-size: 150%;

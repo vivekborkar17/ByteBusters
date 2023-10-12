@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, sans-serif;
     background-color: black;
 }
 section{
@@ -14,7 +15,9 @@ section{
 .login-container {
     background-color: #fff;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 30px;
+    padding-right: 50px;
+    margin-bottom: 300px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -25,6 +28,15 @@ h1 {
     font-size: 24px;
     color: #333;
 }
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: aliceblue;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 30px;
+}
+
 
 input[type="email"],
 input[type="password"] {
@@ -64,7 +76,7 @@ button:hover {
     background-color: aliceblue;
     margin: 0%;
     padding: 0%;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 ul{
     display: flex;
@@ -79,14 +91,13 @@ nav{
     transform: translateZ(25px);
     transform-style: preserve-3d;
     transition: transform 0.5s;
-  
   }
   li{
     margin-right:15px ;
   }
   .middle{
     margin-left: 0;
-    margin-right: 230px;
+    margin-right: 200px;
     padding-left: 10px 10px;
     padding-right: 10px 10px;
     font-size: 150%;
@@ -94,6 +105,5 @@ nav{
   }
   .right{
     display: flex;
-  
   }
-  
+
