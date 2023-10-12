@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logincss.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <div>
+            <li>
+              <img class="logo" src="heath_logo.jpg" alt="logo">
+            </li>
+          </div>
+          <div class="middle">
+            <li><b>health care portel</b></li>
+          </div>
+          <div class="right">
+            <li> <a href="html.html" style="color: #3498db;">Home</a></li>
+            <li><a href="login.html" style="color: #3498db;">Login</a></li>
+            <li><a href="about.html " style="color: #3498db;">About</a></li>
+          </div>
+        </ul>
+        
+      </nav>
+    
+    <section>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="option-buttons">
+                <label for="patient">Patient</label>
+                <input type="radio" name="user-type" id="patient" value="patient" required>
+                <label for="Caretaker">Caretaker</label>
+                <input type="radio" name="user-type" id="Caretaker" value="Caretaker" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
+
