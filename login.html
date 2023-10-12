@@ -28,7 +28,7 @@
     <section>
     <div class="login-container">
         <h1>Login</h1>
-        <form action="#" method="post">
+        <form onsubmit="redirectToInterface(event)">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <div class="option-buttons">
@@ -41,6 +41,26 @@
         </form>
     </div>
 </section>
+
+<script>
+function redirectToInterface(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    const selectedUserType = document.querySelector('input[name="user-type"]:checked').value;
+    let interfaceUrl = '';
+
+    if (selectedUserType === 'patient') {
+        interfaceUrl = 'patient_interface.html'; // URL for patient interface
+    } else if (selectedUserType === 'Caretaker') {
+        interfaceUrl = 'caregiver_interface.html'; // URL for caregiver interface
+    }
+
+    // Navigate to the selected interface page
+    if (interfaceUrl) {
+        window.location.href = interfaceUrl;
+    }
+}
+</script>
+
 </body>
 </html>
-

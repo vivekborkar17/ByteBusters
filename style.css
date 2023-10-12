@@ -75,7 +75,6 @@ li{
 }
 .right{
   display: flex;
-
 }
 .image2{
   width: 400px;
@@ -102,4 +101,8 @@ p{
   margin-right: 250px;
   padding: 20px;
   border-radius: 20px;
+}
+main{
+  margin-left: 360px;
+ 
 }
