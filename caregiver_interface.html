@@ -3,25 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="logincss.css">
-    <title>Login Page</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+ 
+}
+#profile{
+  color: aliceblue;
+}
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    border :2px solid wheat;
+    border-radius: 10px;
+    padding: 10px;
+    
+  }
+  h2{
+        font-size: 36px;
+        color: #3498db;
+        text-transform: uppercase;
+        transform: translateZ(25px);
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: aliceblue;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 30px;
+}
+
+ul{
+ 
+  color:aliceblue ;
+}
+
+nav{
+  display: flex;
+  background-color:white ;
+  font-size: 20px;
+  color: #3498db;
+  text-transform: uppercase;
+  transform: translateZ(25px);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+
+}
+li{
+  margin-right:15px ;
+}
+.middle{
+  margin-left: 0;
+  margin-right: 230px;
+  padding-left: 10px 10px;
+  padding-right: 10px 10px;
+  font-size: 150%;
+  margin-top: 35px;
+}
+.right{
+  display: flex;
+}
+.image2{
+  width: 400px;
+  height:250px;
+}
+#caretakerButton,#patientButton {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styling for button hover state */
+button:hover {
+  background-color: #2980b9;
+}
+p{
+  border: 2px solid wheat;
+  margin-top: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 20px;
+  border-radius: 20px;
+}
+main{
+  margin-left: 360px;
+ 
+}
+    </style>
+    <title>Caretaker Interface</title>
 </head>
 <body>
-    <nav>
-        <ul>
-          <div>
-            <li>
-              <img class="logo" src="heath_logo.jpg" alt="logo">
-            </li>
-          </div>
-          <div class="middle">
-            <li><b>health care portal</b></li>
-          </div>
-          <div class="right">
-            <li> <a href="html.html" style="color: #3498db; text-decoration: none;">Home</a></li>
-            <li><a href="login.html" style="color: #3498db; text-decoration: none;">Login</a></li>
-            <li><a href="about.html " style="color: #3498db; text-decoration: none;">About</a></li>
-          </div>
+    <header>
+        <h1>Caretaker Dashboard</h1>
+    </header>
+
+    <nav style="background-color: #3498db;">
+        <ul style="display: flex;" >
+            <li style="border-color: black;"> <a href="profile.html" style="text-decoration: none; color: black;">Profile</a></li>
+            <li style="border-color: black;"><a href="tasks.html" style="text-decoration: none; color: black;">Tasks</a></li>
+            <li style="border-color: black;"><a href="appointment.html" style="text-decoration: none; color: black;">Appointments</a></li>
+            <li style="border-color: black;"><a href="message.html" style="text-decoration: none; color: black;">Messages</a></li>
+            <li style="border-color: black;"><a href="logout.html" style="text-decoration: none; color: black;">Logout</a></li>
         </ul>
-      </nav>
-    
+    </nav>
+
+    <main>
+        <section id="profile">
+            <h2>Profile Information</h2>
+            <p style="margin: 1%; margin-right: 70%;">Name: John Doe</p>
+            <p style="margin: 1%; margin-right: 70%;">Phone: (123) 456-7890</p>
+            <p style="margin: 1%; margin-right: 70%;"> Email: john@example.com</p>
+            <!-- Add more profile information here -->
+        </section>
+
+        <section id="tasks">
+            <h2>Tasks</h2>
+            <ul>
+                <li style="margin-right: 50%;">Task 1: Assist with meal preparation</li>
+                <li style="margin-right: 50%;">Task 2: Provide transportation to the doctor's appointment</li>
+                <li style="margin-right: 50%;">Task 3: Administer medication</li>
+                <!-- Add more tasks as needed -->
+            </ul>
+        </section>
+
+        <section id="appointments">
+            <h2>Appointments</h2>
+            <ul>
+                <li style="margin-right: 50%;">Appointment 1: Meet with patient at 3:00 PM</li>
+                <li style="margin-right: 50%;" >Appointment 2: Follow-up visit at 10:00 AM</li>
+                <!-- Add more appointments as needed -->
+            </ul>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul>
+                <li style="margin-right: 50%;"><strong>From:</strong> Patient</li>
+                <li style="margin-right: 50%;"><strong>Date:</strong> 2023-10-15</li>
+                <li style="margin-right: 50%;"><strong>Message:</strong> Need assistance tomorrow morning.</li>
+                <li style="margin-right: 50%;"><strong>From:</strong> Family Member</li>
+                <li style="margin-right: 50%;"><strong>Date:</strong> 2023-10-14</li>
+                <li style="margin-right: 50%;"><strong>Message:</strong> Thank you for your help.</li>
+                <!-- Add more messages as needed -->
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
