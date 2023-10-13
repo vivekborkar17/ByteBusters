@@ -59,7 +59,7 @@
             margin-bottom: 10px;
         }
 
-        input, textarea {
+        input, textarea, select {
             grid-column: 2 / 3;
             width: 100%;
             padding: 10px;
@@ -103,6 +103,20 @@
             <label for="age">Your Age:</label>
             <input type="number" id="age" name="age" required>
 
+            <label for="city">Select a City:</label>
+        <select  id="city" name="city">
+            <option value="Delhi">Nagpur</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Kolkata">Delhi</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Lucknow">Lucknow</option>
+        </select>
+
             <label for="address">Your Address:</label>
             <input type="text" id="address" name="address" required>
 
@@ -111,15 +125,6 @@
 
             <label for="duration">Duration (in minutes):</label>
             <input type="number" id="duration" name="duration" required>
-
-            <label for="amount">Amount:</label>
-            <input type="number" id="amount" name="amount" required>
-
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required>
-
-            <label for="time">Preferred Time:</label>
-            <input type="time" id="time" name="time" required>
 
             <label for="contact">Your Contact Number:</label>
             <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="1234567890" required>
@@ -158,6 +163,22 @@
             // Display the form values (you can replace this with your desired action)
             alert('Form submitted with the following data:\n' + JSON.stringify(formValues, null, 2));
         }
+       
+    function submitForm(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const formValues = {};
+
+        formData.forEach((value, key) => {
+            formValues[key] = value;
+        });
+
+        // Display the form values (you can replace this with your desired action)
+        alert('Your form Submitted successfully !'); // Show success message
+    }
+
+
     </script>
 </body>
 </html>

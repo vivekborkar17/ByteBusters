@@ -1,7 +1,7 @@
 # ByteBusters
 Open Html.html file for home page.
 <br>
-This is our project for Smakathron
+This is our project for Smackathon
 <br>
 Problem Statement:
 <br>
@@ -11,10 +11,6 @@ Team Members:
 <br>
 1.Vivek Borkar (Team Lead)
 <br>
-2.Mehul
+2.Mehul Kohad
 <br>
-3.Ujjwal
-<br>
-4.Ansh
-<br>
-5.Palash
+3.Ujjwal Bokde 
